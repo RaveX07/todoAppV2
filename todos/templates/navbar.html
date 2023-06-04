@@ -1,10 +1,15 @@
 {% load static %}
-<nav class="navbar bg-body-tertiary">
+<nav class="navbar bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-            <img src="{% static 'images/logo.png' %}" alt="Logo" width="40" height="32"
+        <a class="navbar-brand text-white" href="/">
+            <img src="{% static 'images/logoNew.png' %}" alt="Logo" width="40" height="32"
                 class="d-inline-block align-text-top">
             TodoAppV2
         </a>
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+            <button class="btn btn-outline-danger" onclick="window.location.href='logout/';">Logout</button>
+        </li>
+        {% endif %}
     </div>
 </nav>
