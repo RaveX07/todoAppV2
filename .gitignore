@@ -1,6 +1,3 @@
 /.env
 /static
 /venv
-todoAppV2/__pycache__/
-todos/migrations/
-todos/__pycache__/
