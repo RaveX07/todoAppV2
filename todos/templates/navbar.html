@@ -10,6 +10,11 @@
         <li class="nav-item">
             <button class="btn btn-outline-danger" onclick="window.location.href='logout/';">Logout</button>
         </li>
+        {% else %}
+        <li class="nav-item">
+            <button class="btn btn-outline-warning" onclick="window.location.href='/';">Login</button>
+            <button class="btn btn-outline-danger" onclick="window.location.href='register/';">Register</button>
+        </li>
         {% endif %}
     </div>
 </nav>
