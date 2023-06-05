@@ -3,3 +3,4 @@
 /venv
 todoAppV2/__pycache__/
 todos/__pycache__/
+todos/migrations/
